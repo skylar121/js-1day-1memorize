@@ -17,10 +17,11 @@
 ## 같이 하는 사람들
 
 - 멋쟁이사자처럼 Front-End School 2기 동료들 <br> (허지현, 임홍렬, 이수빈, 황혜명, 조민경, 조수영, 이예은, 구나영, 김도희, 전유진, 조윤희, 남위정, 김태희, 우혜빈, 이소민, 오한솔, 임현지, 장소연, 정예지, 김경림, 최수빈, 류재준)
-- 암기한 내용은 github와 notion, youtube로 관리하고 있습니다.
+- 암기한 내용은 github와 notion, youtube로 데일리 업로드하여 관리하고 있습니다.
 
 <br>
 
 ## 정보
 
 <a href="https://www.notion.so/f776796efe434a6fbdbbd0d931a602c9" target="_blank"><img src="https://img.shields.io/badge/노션-000000?style=round-square&logo=Notion&logoColor=white"/></a>
+<a href="https://www.youtube.com/watch?v=q5Rkzqwo_wM&list=PLJobD_2eG4x7Jwm7hNKtVQK1vOiIiTG4R" target="_blank"><img src="https://img.shields.io/badge/유튜브-FF0000?style=round-square&logo=Youtube&logoColor=white"/></a>
