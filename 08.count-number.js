@@ -5,4 +5,4 @@
 // (※ 예를들어 8808은 3, 8888은 4로 카운팅 해야 함)
 
 (Array(10000).fill(1).map((value, index)=>value+index)+'').split('8').length - 1;
-Array(10000).fill(1).map((value, index)=>value+index).join( "" ).match( /8/g ).length;
+// Array(10000).fill(1).map((value, index)=>value+index).join( "" ).match( /8/g ).length;

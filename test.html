@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <div class="alert alert-danger" id="alert">
+        5초 이내 구매시 사은품 증정
+    </div>
+    <div id="time">
+    </div>
+
+    <script>
+        const alert = document.querySelector('#alert');
+        const time = document.querySelector('#time');
+        
+        let count = 6;
+        setInterval(function() {
+            count--;
+            if (count >= 0) {
+                time.textContent = count;
+            }
+            if (count == 0) {
+                alert.style.display ='none';
+            }
+        }, 1000);
+        
+    </script>
+</body>
+
+</html>

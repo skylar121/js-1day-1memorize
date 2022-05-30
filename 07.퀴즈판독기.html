@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <p>태조 이성계가 태어난 연도는?</p>
+    <input type="number" id="answer" />
+    <button id="send-answer" type="submit">제출</button>
+    <script>
+        const button = document.querySelector('#send-answer');
+        let count = 0;
+
+        button.addEventListener('click', () => {
+            const inputEl = document.querySelector('#answer');
+            let userAnswer = inputEl.value; // input은 닫는 태그가 없어서 입력된 값은 textContent가 아니고 value임 
+            const answer = '1335';            
+            // 가져와 지는 값은 string (type number은 입력할때만)
+            if (userAnswer == answer) {
+                alert('정답!');
+                count = 0; // 정답 맞추면 횟수 초기화
+            } else if (userAnswer != answer && count < 3) {
+                alert('땡');
+                count++;
+            } else if (userAnswer != answer && count >= 3) {
+                alert('멍청아!');
+            }
+            inputEl.value = null;
+        });
+    </script>
+</body>
+
+</html>
