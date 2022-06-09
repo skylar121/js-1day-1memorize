@@ -4,9 +4,9 @@
 // getMonth()도 0부터 시작
 const day = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
-function checkDay (년, 월, 일) {
+function checkDay(년, 월, 일) {
     const theDay = new Date(`${년}-${월}-${일}`);
     console.log(day[theDay.getDay()]);
 }
 
-checkDay (년, 월, 일);
+checkDay(년, 월, 일);
