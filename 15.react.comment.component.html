@@ -80,11 +80,12 @@ https://www.inflearn.com/course/%EC%B2%98%EC%9D%8C-%EB%A7%8C%EB%82%9C-%EB%A6%AC%
             );
         }
 
+
         function CommentList(props) {
             return (
                 <div>
-                    {comments.map((comment) => {
-                        return <Comment name={comment.name} comment={comment.comment} />;
+                    {comments.map((x) => {
+                        return <Comment name={x.name} comment={x.comment} />;
                     })}
                 </div>
             );
