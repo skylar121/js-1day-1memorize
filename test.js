@@ -1,12 +1,31 @@
-// 요일 확인 함수
+// 퀴즈1: 주어진 배열 안의 딸기 아이템을 키위로 교체하는 함수를 만들기
+// 단, 주어진 배열을 수정하지 않도록!
+// input: ['🍌', '🍓', '🍇', '🍓']
+// output: [ '🍌', '🥝', '🍇', '🥝' ]
 
-// getDay() : 일~토 (0~6)로 표현하기 때문에 "SUN"부터 배열에 넣기
-// getMonth()도 0부터 시작
-const day = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+//+추가문제 '무슨 과일을' , '무슨 과일로' 바꾸고싶은지도 인풋값으로 입력해서 출력할 수 있게 해보기
 
-function checkDay (년, 월, 일) {
-    const theDay = new Date(`${년}-${월}-${일}`);
-    console.log(day[theDay.getDay()]);
+const array = ['🍌', '🍓', '🍇', '🍓'];
+
+function replace(array) {
+    const newArr = Array.from(array);
+    for (let i = 0; i < newArr.length; i++) {
+        if (newArr[i] === '🍓') {
+            newArr[i] = '🥝';
+        }
+    }
+
+    return newArr;
 }
 
-checkDay (년, 월, 일);
+
+function replaceTo(array, from, to) {
+    const newArr = Array.from(array);
+    for (let i = 0; i < newArr.length; i++) {
+        if (newArr[i] === from) {
+            newArr[i] = to;
+        }
+    }
+
+    return newArr;
+}
